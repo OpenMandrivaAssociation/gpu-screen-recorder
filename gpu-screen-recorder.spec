@@ -84,8 +84,8 @@ install -Dm644 "extra/gpu-screen-recorder.service" %buildroot/%_unitdir/gpu-scre
 %_unitdir/gpu-screen-recorder.service
 
 %files gtk
-%_bindir/gpu-screen-recorder-gtk
-%_desktopdir/com.dec05eba.gpu_screen_recorder.desktop
-%_datadir/metainfo/com.dec05eba.gpu_screen_recorder.appdata.xml
-%_datadir/icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png
-%_datadir/icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png
+#_bindir/gpu-screen-recorder-gtk
+#_desktopdir/com.dec05eba.gpu_screen_recorder.desktop
+#_datadir/metainfo/com.dec05eba.gpu_screen_recorder.appdata.xml
+#_datadir/icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png
+#_datadir/icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png
