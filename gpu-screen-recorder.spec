@@ -13,7 +13,7 @@ Source0: https://dec05eba.com/snapshot/gpu-screen-recorder.git.%{git2}.tar.gz
 
 BuildRequires: pkgconfig(libglvnd)
 BuildRequires: pkgconfig(libdrm)
-BuildRrquires: pkgconfig(libva)
+BuildRequires: pkgconfig(libva)
 BuildRequires: pkgconfig(xcomposite)
 BuildRequires: pkgconfig(xrandr)
 BuildRequires: pkgconfig(libavfilter)
