@@ -8,7 +8,8 @@ Summary: This is a screen recorder that has minimal impact on system performance
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
 Group: Video
 License: GPL-3.0-only
-Source: https://dec05eba.com/snapshot/gpu-screen-recorder.git.%{git2}.tar.gz
+Source0: https://dec05eba.com/snapshot/gpu-screen-recorder.git.%{git2}.tar.gz
+Source1: https://dec05eba.com/snapshot/gpu-screen-recorder-gtk.git.r283.09a288f.tar.gz
 
 BuildRequires: pkgconfig(libglvnd)
 BuildRequires: pkgconfig(libdrm)
@@ -52,7 +53,7 @@ This package contains cli app for screen recorder
 This package contains gui app for screen recorder
 
 %prep
-%setup 
+%autosetup -c -n %{name} -a1
 #-a1
 #autosetup -n gpu-screen-recorder.git.r602.04db56a -p1
 #autosetup
