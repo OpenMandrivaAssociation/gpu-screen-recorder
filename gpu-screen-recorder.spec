@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 %define git 20240603
 %define git2 r602.04db56a
 
