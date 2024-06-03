@@ -62,19 +62,19 @@ This package contains gui app for screen recorder
 %build
 #add_optflags %optflags_shared
 ./build.sh
-#./gpu-screen-recorder-gtk/build.sh
+./gpu-screen-recorder-gtk/build.sh
 
 %install
 install -Dm755 "gsr-kms-server" %buildroot%_bindir/gsr-kms-server
 install -Dm755 "gpu-screen-recorder" %buildroot%_bindir/gpu-screen-recorder
 install -Dm644 "extra/gpu-screen-recorder.service" %buildroot/%_unitdir/gpu-screen-recorder.service
 
-#cd gpu-screen-recorder-gtk
-#install -Dm755 "gpu-screen-recorder-gtk" %buildroot%_bindir/gpu-screen-recorder-gtk
-#install -Dm644 "gpu-screen-recorder-gtk.desktop" %buildroot%_desktopdir/com.dec05eba.gpu_screen_recorder.desktop
-#install -Dm644 com.dec05eba.gpu_screen_recorder.appdata.xml %buildroot%_datadir/metainfo/com.dec05eba.gpu_screen_recorder.appdata.xml
-#install -Dm644 icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png %buildroot%_datadir/icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png
-#install -Dm644 icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png %buildroot%_datadir/icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png
+cd gpu-screen-recorder-gtk
+install -Dm755 "gpu-screen-recorder-gtk" %buildroot%_bindir/gpu-screen-recorder-gtk
+install -Dm644 "gpu-screen-recorder-gtk.desktop" %buildroot%_desktopdir/com.dec05eba.gpu_screen_recorder.desktop
+install -Dm644 com.dec05eba.gpu_screen_recorder.appdata.xml %buildroot%_datadir/metainfo/com.dec05eba.gpu_screen_recorder.appdata.xml
+install -Dm644 icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png %buildroot%_datadir/icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png
+install -Dm644 icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png %buildroot%_datadir/icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png
 
 %files cli
 %_bindir/gsr-kms-server
