@@ -52,9 +52,10 @@ This package contains cli app for screen recorder
 This package contains gui app for screen recorder
 
 %prep
-#setup -a1
+%setup 
+#-a1
 #autosetup -n gpu-screen-recorder.git.r602.04db56a -p1
-%autosetup -S
+#autosetup
 
 %build
 #add_optflags %optflags_shared
