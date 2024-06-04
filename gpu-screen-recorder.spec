@@ -10,7 +10,7 @@ Url: https://git.dec05eba.com/gpu-screen-recorder/about/
 Group: Video
 License: GPL-3.0-only
 Source0: https://dec05eba.com/snapshot/gpu-screen-recorder.git.%{git2}.tar.gz
-Source0: https://dec05eba.com/snapshot/gpu-screen-recorder-gtk.git.r283.09a288f.tar.gz
+Source1: https://dec05eba.com/snapshot/gpu-screen-recorder-gtk.git.r283.09a288f.tar.gz
 
 BuildRequires: pkgconfig(libglvnd)
 BuildRequires: pkgconfig(libdrm)
