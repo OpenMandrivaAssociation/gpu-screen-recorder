@@ -34,7 +34,7 @@ BuildRequires: pkgconfig(appindicator3-0.1)
 %package gtk
 Summary: The gui app for %name
 Group: Video
-Requires: %name-cli
+#Requires: %name-cli
 
 %description
 This is a screen recorder that has minimal impact on system performance 
@@ -86,8 +86,7 @@ install -Dm644 icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png %
 #_unitdir/gpu-screen-recorder.service
 
 %files gtk
-#_bindir/gpu-screen-recorder-gtk
-#_desktopdir/com.dec05eba.gpu_screen_recorder.desktop
-#_datadir/metainfo/com.dec05eba.gpu_screen_recorder.appdata.xml
-#_datadir/icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png
-#_datadir/icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png
+%_bindir/gpu-screen-recorder-gtk
+%{_datadir}/icons/hicolor/128x128/apps/com.dec05eba.gpu_screen_recorder.png
+%{_datadir}/icons/hicolor/64x64/apps/com.dec05eba.gpu_screen_recorder.png
+%{_datadir}/metainfo/com.dec05eba.gpu_screen_recorder.appdata.xml
