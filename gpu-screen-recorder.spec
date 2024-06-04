@@ -65,8 +65,8 @@ This package contains gui app for screen recorder
 
 %build
 #add_optflags %optflags_shared
-#./build.sh
-./gpu-screen-recorder-gtk/build.sh
+./build.sh
+#./gpu-screen-recorder-gtk/build.sh
 
 %install
 #install -Dm755 "gsr-kms-server" %buildroot%_bindir/gsr-kms-server
