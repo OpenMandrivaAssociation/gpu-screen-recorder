@@ -33,6 +33,7 @@ BuildRequires: pkgconfig(libpulse)
 BuildRequires: pkgconfig(libswresample)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(appindicator3-0.1)
+BuildRequires: vulkan-headers
 
 %rename %{name}-cli
 
