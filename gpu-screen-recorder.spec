@@ -50,7 +50,7 @@ Supported video codecs:
 
 
 %prep
-%autosetup -c -n %{name}-%{tag}
+%autosetup -n %{name}-%{tag}
 
 %build
 %meson
