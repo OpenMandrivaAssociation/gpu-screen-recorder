@@ -35,6 +35,7 @@ BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(appindicator3-0.1)
 BuildRequires: vulkan-headers
 
+Recommends:    gpu-screen-recorder-gtk
 %rename %{name}-cli
 
 %description
