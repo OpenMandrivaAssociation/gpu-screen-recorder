@@ -62,3 +62,7 @@ Supported video codecs:
 %meson_install
 
 %files
+%{_bindir}/gpu-screen-recorder
+%{_bindir}/gsr-kms-server
+%{_prefix}/lib/modprobe.d/gsr-nvidia.conf
+%{_prefix}/lib/systemd/user/gpu-screen-recorder.service
