@@ -59,7 +59,7 @@ This package contains cli app for screen recorder
 #autosetup -c -n %{name}-gtk
 #-a1
 #-a1
-%autosetup -n gpu-screen-recorder.git.r602.04db56a -p1
+%autosetup -c -n %{name}-cli
 #autosetup
 
 
