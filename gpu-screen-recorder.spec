@@ -27,7 +27,7 @@ BuildRequires: pkgconfig(libswresample)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(appindicator3-0.1)
 
-package cli
+%package cli
 Summary: The cli applitation for %name
 Group: Video
 
