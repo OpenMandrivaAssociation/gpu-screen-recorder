@@ -5,8 +5,8 @@
 %define tag 4.6.2
 
 Name: gpu-screen-recorder
-Version: %{date}~%{tag}
-Release: 1
+Version: %{tag}
+Release: 1.%{date}.0
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
 Group: Video
@@ -49,7 +49,6 @@ Supported video codecs:
     H264 (default on Intel)
     HEVC (default on AMD and NVIDIA)
     AV1 (not currently supported on NVIDIA if you use GPU Screen Recorder flatpak)
-
 
 %prep
 %autosetup -n %{name}-%{tag}
