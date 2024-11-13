@@ -5,7 +5,7 @@
 %define tag 4.6.2
 
 Name: gpu-screen-recorder
-Version: %{date}-%{tag}
+Version: %{date}~%{tag}
 Release: 1
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
