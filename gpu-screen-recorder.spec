@@ -17,6 +17,7 @@ Source0:  gpu-screen-recorder-%{version}.tar.xz
 #Source0: https://dec05eba.com/snapshot/gpu-screen-recorder.git.%{git2}.tar.gz
 
 BuildSystem: meson
+BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(libglvnd)
 BuildRequires: pkgconfig(libdrm)
 BuildRequires: pkgconfig(libva)
