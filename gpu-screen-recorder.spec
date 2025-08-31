@@ -3,6 +3,8 @@
 %define date 20250126
 %define tag %{version}
 
+%define devname %mklibname -d gpu-screen-recorder
+
 Name: gpu-screen-recorder
 Version: 5.6.6
 Release: 1
@@ -49,9 +51,20 @@ Supported video codecs:
     H264 (default on Intel)
     HEVC (default on AMD and NVIDIA)
     AV1 (not currently supported on NVIDIA if you use GPU Screen Recorder flatpak)
+    
+%package -n %{devname}
+Summary:    Development files for %{name}
+Requires:	%{name} = %{EVRD}
+Provides:   %{name}-devel = %{EVRD}
+
+%description -n %{devname}
+This package contains development files for %{name}.
 
 %files
 %{_bindir}/gpu-screen-recorder
 %{_bindir}/gsr-kms-server
 %{_prefix}/lib/modprobe.d/gsr-nvidia.conf
 %{_prefix}/lib/systemd/user/gpu-screen-recorder.service
+
+%files -n %{devname}
+%{_includedir}/gsr/plugin.h
