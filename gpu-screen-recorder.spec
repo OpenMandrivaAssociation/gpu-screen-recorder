@@ -6,7 +6,7 @@
 %define devname %mklibname -d gpu-screen-recorder
 
 Name: gpu-screen-recorder
-Version: 5.6.6
+Version: 5.7.3
 Release: 1
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
