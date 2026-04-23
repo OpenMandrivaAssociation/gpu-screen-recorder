@@ -69,6 +69,9 @@ This package contains development files for %{name}.
 %{_bindir}/gsr-kms-server
 %{_prefix}/lib/modprobe.d/gsr-nvidia.conf
 %{_prefix}/lib/systemd/user/gpu-screen-recorder.service
+%{_datadir}/gpu-screen-recorder/scripts/
 
 %files -n %{devname}
 %{_includedir}/gsr/plugin.h
+%{_mandir}/man1/gpu-screen-recorder.1.*
+%{_mandir}/man1/gsr-kms-server.1.*
