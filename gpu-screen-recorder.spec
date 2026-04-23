@@ -6,7 +6,7 @@
 %define devname %mklibname -d gpu-screen-recorder
 
 Name: gpu-screen-recorder
-Version: 5.9.2
+Version: 5.13.3
 Release: 1
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
@@ -37,6 +37,9 @@ BuildRequires: pkgconfig(libswresample)
 BuildRequires: vulkan-headers
 
 Recommends:    gpu-screen-recorder-gui
+Requires:    libglvnd
+Requires:    %{_lib}turbojpeg0
+
 %rename %{name}-cli
 
 %description
