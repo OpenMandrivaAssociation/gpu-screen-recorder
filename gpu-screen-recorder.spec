@@ -1,12 +1,12 @@
 #define git 20240603
 #define git2 r602.04db56a
-%define date 20250126
+%define date 20260704
 %define tag %{version}
 
 %define devname %mklibname -d gpu-screen-recorder
 
 Name: gpu-screen-recorder
-Version: 5.13.3
+Version: 5.14.1
 Release: 1
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
