@@ -6,15 +6,15 @@
 %define devname %mklibname -d gpu-screen-recorder
 
 Name: gpu-screen-recorder
-Version: 5.14.1
+Version: 5.15.2
 Release: 1
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
 Group: Video
 License: GPL-3.0-only
-# Use... git clone --branch 5.9.2 --depth 1 https://repo.dec05eba.com/gpu-screen-recorder
-# for now lets choose tag instead of commit, so use 5.8.0
-# then create .xz archive gpu-screen-recorder-5.1.0.tar.xz
+# Use... git clone --branch 5.15.2 --depth 1 https://repo.dec05eba.com/gpu-screen-recorder
+# for now lets choose tag instead of commit, so use 5.15.2
+# then create .xz archive gpu-screen-recorder-5.15.2.tar.xz
 Source0:  gpu-screen-recorder-%{version}.tar.xz
 #Source0: https://dec05eba.com/snapshot/gpu-screen-recorder.git.%{git2}.tar.gz
 
