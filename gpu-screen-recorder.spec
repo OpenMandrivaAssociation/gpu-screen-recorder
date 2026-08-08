@@ -6,7 +6,7 @@
 %define devname %mklibname -d gpu-screen-recorder
 
 Name: gpu-screen-recorder
-Version: 5.15.3
+Version: 6.0.0
 Release: 1
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
@@ -67,6 +67,7 @@ This package contains development files for %{name}.
 %files
 %{_bindir}/gpu-screen-recorder
 %{_bindir}/gsr-kms-server
+%{_bindir}/gsr-cli
 %{_prefix}/lib/modprobe.d/gsr-nvidia.conf
 %{_prefix}/lib/systemd/user/gpu-screen-recorder.service
 %{_datadir}/gpu-screen-recorder/scripts/
@@ -75,3 +76,4 @@ This package contains development files for %{name}.
 %{_includedir}/gsr/plugin.h
 %{_mandir}/man1/gpu-screen-recorder.1.*
 %{_mandir}/man1/gsr-kms-server.1.*
+%{_mandir}/man1/gsr-cli.1.*
