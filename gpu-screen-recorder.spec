@@ -7,7 +7,7 @@
 
 Name: gpu-screen-recorder
 Version: 6.0.0
-Release: 1
+Release: 2
 Summary: This is a screen recorder that has minimal impact on system performance.
 Url: https://git.dec05eba.com/gpu-screen-recorder/about/
 Group: Video
